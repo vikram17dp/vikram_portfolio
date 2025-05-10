@@ -86,11 +86,11 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex justify-center"
+          className="flex justify-center rounded-full"
         >
           <div className="profile-container">
             <motion.div
-              className="profile-image"
+              className="profile-image "
               onHoverStart={() => setIsHovered(true)}
               onHoverEnd={() => setIsHovered(false)}
               animate={
@@ -114,7 +114,7 @@ const Hero = () => {
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 0.7 }}
-                  className="absolute inset-0 bg-gradient-to-tr from-purple-600 to-violet-400 flex items-center justify-center rounded-full"
+                  className="absolute inset-0 bg-gradient-to-tr from-purple-600 to-violet-400 flex items-center justify-center rounded-full "
                 >
                   <span className="text-white font-bold text-xl">Vikram D P</span>
                 </motion.div>
