@@ -28,7 +28,10 @@ const Skills = () => {
     },
     {
       category: "DevOps & Tools",
-      skills: ["Git", "GitHub", "Docker", "AWS", "Vercel", "Render", "Postman"],
+      skills: [
+        "Git", "GitHub", "Docker", "AWS", "Vercel", "Render", "Postman",
+        "Cloudinary", "Insomnia", "Neon", "Inngest", "Gemini API", "Kinde Auth"
+      ],
       colorClass: "from-rose-500 to-pink-300",
     },
     {
@@ -47,8 +50,6 @@ const Skills = () => {
       "bg-gradient-to-r from-rose-100 to-rose-200 text-rose-800 dark:from-rose-900 dark:to-rose-800 dark:text-rose-100",
       "bg-gradient-to-r from-indigo-100 to-indigo-200 text-indigo-800 dark:from-indigo-900 dark:to-indigo-800 dark:text-indigo-100",
     ]
-
-    // Use a combination of category and item index to get varied but consistent colors
     const colorIndex = (index + categoryIndex) % colors.length
     return colors[colorIndex]
   }

@@ -10,6 +10,7 @@ import { Menu, Moon, Sun } from "lucide-react"
 const Navbar = () => {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
+  const [open, setOpen] = useState(false) // <-- Controls sidebar open state
 
   useEffect(() => {
     setMounted(true)
@@ -28,29 +29,28 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
+        {/* Logo */}
         <div className="flex items-center gap-2">
-          <Link href="/" className="font-bold text-xl">
-            <span className="gradient-text">Vikram D P</span>
+          <Link href="/" className="flex items-center gap-2">
+            <img
+              src="/logo.png"
+              alt="VDP Logo"
+              className="h-20 w-20 md:h-24 md:w-24 lg:h-28 lg:w-28 object-contain"
+            />
           </Link>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-4 lg:gap-6">
           {navItems.map((item) => (
-            <Link key={item.name} href={item.href} className="text-sm font-medium transition-colors hover:text-primary">
+            <Link
+              key={item.name}
+              href={item.href}
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
               {item.name}
             </Link>
           ))}
-          {mounted && (
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              aria-label="Toggle theme"
-            >
-              {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </Button>
-          )}
           <Button asChild>
             <a href="/Vikram_DP_Resume.pdf" download>
               Resume
@@ -60,17 +60,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         <div className="flex items-center gap-2 md:hidden">
-          {mounted && (
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              aria-label="Toggle theme"
-            >
-              {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </Button>
-          )}
-          <Sheet>
+          <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" aria-label="Menu">
                 <Menu className="h-5 w-5" />
@@ -82,12 +72,13 @@ const Navbar = () => {
                   <Link
                     key={item.name}
                     href={item.href}
+                    onClick={() => setOpen(false)} // <-- Closes the menu
                     className="text-lg font-medium transition-colors hover:text-primary"
                   >
                     {item.name}
                   </Link>
                 ))}
-                <Button asChild className="mt-4">
+                <Button asChild className="mt-4" onClick={() => setOpen(false)}>
                   <a href="/Vikram_DP_Resume.pdf" download>
                     Resume
                   </a>

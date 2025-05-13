@@ -1,7 +1,19 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowLeft, Trophy, BookOpen, Rocket, Code, Lightbulb } from "lucide-react"
+import {
+  ArrowLeft,
+  Trophy,
+  BookOpen,
+  Rocket,
+  Code,
+  Lightbulb,
+  HeartPulse,
+  Bug,
+  Brain,
+  Users,
+  Laptop,
+} from "lucide-react"
 
 export default function ActivitiesPage() {
   const activities = [
@@ -13,7 +25,8 @@ export default function ActivitiesPage() {
     },
     {
       title: "Smart India Hackathon 2024",
-      description: "Contributed to Smart India Hackathon 2024, developing an AI Trip Planner (code on GitHub).",
+      description:
+        "Contributed to Smart India Hackathon 2024, developing an AI Trip Planner (code on GitHub).",
       icon: <Rocket className="h-8 w-8 text-primary" />,
     },
     {
@@ -33,6 +46,26 @@ export default function ActivitiesPage() {
         "Tech Member at Integrated Product Development Club, collaborating to brainstorm and develop innovative products and prototypes.",
       icon: <Code className="h-8 w-8 text-primary" />,
     },
+    {
+      title: "Cancer Awareness 5K Marathon",
+      description:
+        "Participated in a 5K Marathon to raise awareness for cancer and support healthcare initiatives.",
+      icon: <HeartPulse className="h-8 w-8 text-primary" />,
+    },
+    
+    {
+  title: "Full Stack Development Challenges",
+  description:
+    "Actively participated in several full-stack development competitions, building and deploying complete web applications within limited timeframes like 24–48 hours.",
+  icon: <Laptop className="h-8 w-8 text-primary" />,
+},
+{
+  title: "Hackathon Participation & Team Projects",
+  description:
+    "Engaged in numerous hackathons, collaborating with diverse teams to develop innovative solutions such as sustainability platforms, AI tools, and tech-based prototypes under tight deadlines.",
+  icon: <Users className="h-8 w-8 text-primary" />,
+},
+
   ]
 
   return (

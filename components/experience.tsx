@@ -37,13 +37,14 @@ const Experience = () => {
   ]
 
   const education = [
-    {
-      institution: "MVJ College of Engineering",
-      degree: "Bachelor of Engineering in Computer Science and Engineering",
-      period: "Dec 2022 - Present",
-      location: "Bangalore, Karnataka",
-      gpa: "CGPA: 8.45",
-    },
+   {
+  institution: "MVJ College of Engineering",
+  degree: "Bachelor of Engineering in Computer Science and Engineering",
+  period: "Dec 2022 - Present",
+  location: "Bangalore, Karnataka",
+  gpa: "CGPA: 8.45 (Aggregate up to 5th Semester)",
+}
+,
     {
       institution: "The Team Academy",
       degree: "Pre-University Course",

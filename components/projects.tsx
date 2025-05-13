@@ -15,7 +15,7 @@ const Projects = () => {
       description: "Hospital management system with role-based authentication and Stripe integration.",
       image: "/images/projects/prescripto.png",
       tags: ["MongoDB", "Express.js", "React", "Node.js", "JWT", "Firebase", "Google OAuth", "Stripe"],
-      liveLink: "#",
+      liveLink: "https://pre-scripto-hopso-frontend.vercel.app/",
       githubLink: "https://github.com/vikram17dp",
       features: [
         "Enhanced hospital management system with 100% role-based authentication",
@@ -28,7 +28,7 @@ const Projects = () => {
       description: "Full-stack car dealership platform with AI-powered features for vehicle listings.",
       image: "/images/projects/vehiql.png",
       tags: ["Next.js", "Tailwind CSS", "Prisma", "Supabase", "PostgreSQL", "Arcjet", "Shadcn-UI"],
-      liveLink: "#",
+      liveLink: "https://vehiql-carsportal.vercel.app/",
       githubLink: "https://github.com/vikram17dp",
       features: [
         "AI auto-fills vehicle details from a single car image",
@@ -41,7 +41,7 @@ const Projects = () => {
       description: "Real-time chat application built with Redis for efficient message handling.",
       image: "/images/projects/redistash.png",
       tags: ["React.js", "Node.js", "Redis", "Socket.io", "Express.js", "JWT"],
-      liveLink: "#",
+      liveLink: "https://redis-chat-app-gules.vercel.app/auth",
       githubLink: "https://github.com/vikram17dp",
       features: [
         "Real-time messaging with Redis pub/sub",
@@ -54,7 +54,7 @@ const Projects = () => {
       description: "Real estate platform for property listings and management.",
       image: "/images/projects/estateease.png",
       tags: ["Next.js", "MongoDB", "Express.js", "Node.js", "Tailwind CSS"],
-      liveLink: "#",
+      liveLink: "https://mern-estate-project1.onrender.com/",
       githubLink: "https://github.com/vikram17dp",
       features: [
         "Property search with advanced filtering options",

@@ -23,7 +23,7 @@ const About = () => {
     },
     {
       title: "Database Management",
-      description: "MongoDB, MySQL, PostgreSQL, DynamoDB, Supabase",
+      description: "MongoDB, MySQL, PostgreSQL, Supabase",
       icon: <Database className="h-10 w-10 text-primary" />,
     },
     {
@@ -47,11 +47,10 @@ const About = () => {
         transition={{ duration: 0.5 }}
       >
         <h2 className="section-heading text-center">About Me</h2>
-        <p className="text-lg text-center mb-10 max-w-3xl mx-auto text-muted-foreground">
-          👨‍💻 I&apos;m a 3rd-year B.E. Computer Science student and Full-Stack Developer with expertise in Java, Data
-          Structures & Algorithms, and Web Development. Passionate about blending theory with real-world projects, I
-          specialize in building scalable, secure applications.
-        </p>
+        <p className="text-lg text-center mb-10 max-w-3xl mx-auto text-muted-foreground font-semibold">
+  👨‍💻 I'm Vikram D P, a 3rd-year Computer Science student and passionate Full-Stack Developer skilled in the MERN stack and Next.js. I love building secure, scalable web applications and solving complex problems using Data Structures and Algorithms. Driven by hands-on learning and innovation, I turn ideas into impactful digital solutions.
+</p>
+
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
           {specializations.map((spec, index) => (

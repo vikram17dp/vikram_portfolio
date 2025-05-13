@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Github, Linkedin, Code2, Mail, ExternalLink } from "lucide-react"
+import Image from "next/image"
+import { Github, Linkedin, Code2, Mail } from "lucide-react"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -48,10 +49,17 @@ const Footer = () => {
               href="https://codolio.com/profile/5GOnQ5r7"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full hover:bg-muted transition-colors"
+              className="p-2 rounded-full hover:bg-muted transition-colors group"
               aria-label="Codolio"
             >
-              <ExternalLink className="h-5 w-5" />
+              <div className="relative w-5 h-5">
+                <Image
+                  src="/images/codolio-logo.png"
+                  alt="Codolio"
+                  fill
+                  className="object-contain transition-transform group-hover:scale-110"
+                />
+              </div>
             </Link>
             <Link
               href="mailto:vikramdp505@gmail.com"
