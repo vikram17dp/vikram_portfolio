@@ -19,6 +19,9 @@ const dancingScript = Dancing_Script({
 export const metadata: Metadata = {
   title: "Vikram D P | Full-Stack Developer",
   description: "Portfolio of Vikram D P, a Full-Stack Developer specializing in React.js, Node.js, and Next.js",
+  icons: {
+    icon: "/logo.png", // Using logo.png as favicon
+  },
 }
 
 export default function RootLayout({
